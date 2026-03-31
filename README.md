@@ -1,4 +1,4 @@
-# 📊 Ánalise Exploratória de Dados -  OLIST (E-COMMERCE)
+# Ánalise Exploratória de Dados -  OLIST (E-COMMERCE)
 
 ## 🎯 Visão Geral e Contexto do Projeto
 Análise Exploratória de Dados (EDA) no dataset público do e-commerce brasileiro **Olist**, com o objetivo de extrair insights estratégicos que auxiliem na otimização do portfólio de produtos, melhoria da experiência do cliente, refinamento da eficiência logística e operacional e identificação de oportunidades de crescimento. Para isso, foram utilizadas técnicas de limpeza e tratamento de dados, análise estatística, visualizações e modelagem de métricas.
