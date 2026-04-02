@@ -1,31 +1,29 @@
 # Ánalise Exploratória de Dados -  OLIST (E-COMMERCE)
 
-## 🎯 Visão Geral e Contexto do Projeto
+## Visão Geral e Contexto do Projeto
 Análise Exploratória de Dados (EDA) no dataset público do e-commerce brasileiro **Olist**, com o objetivo de extrair insights estratégicos que auxiliem na otimização do portfólio de produtos, melhoria da experiência do cliente, refinamento da eficiência logística e operacional e identificação de oportunidades de crescimento. Para isso, foram utilizadas técnicas de limpeza e tratamento de dados, análise estatística, visualizações e modelagem de métricas.
 
 A Olist é uma plataforma de tecnologia que conecta pequenos e médios comerciantes de todo o Brasil aos principais marketplaces do país. Com quase de 100 mil pedidos registrados entre 2016 e 2018.
 
-## 📁 Pipeline de Dados
+## Dashboards 
+|![Página 1](images/DASHBOARD-PANORAMA-VENDAS.png) | ![Página 2](images/DASHBOARD-CLIENTES.png) |
+|---|---|
+|![Página 3](images/DASHBOARD-ENTREGAS.png) | ![Página 3](images/DASHBOARD-CATEGORIAS.png) |
+
+
+## Pipeline de Dados
 ###  `Notebook Colab` - Limpeza e Preparação dos Dados + Confirmação de valores 
-- **ETL e Validação:** Preparação dos dados, limpeza e tratamento para o Power BI. Inclui verificações de consistência para garantir que os valores trabalhados no Power BI estejam alinhados com o dataset original.
+**ETL e Validação:** Preparação dos dados, limpeza e tratamento para o Power BI. Inclui verificações de consistência para garantir que os valores trabalhados no Power BI estejam alinhados com o dataset original.
 
 [Visualizar notebook diretamente no GitHub](notebook/ETL__Validação_OLIST_publico.ipynb)<br>
 
 > **Nota:** O notebook original utilizava um banco de dados SQL privado fornecido pela instituição Harve. Por questões de segurança, as credenciais foram removidas na versão publicada. A lógica de tratamento e análise permanece completa e pode ser replicada com os arquivos CSV públicos da Olist disponíveis no Kaggle.
 
-### `Modelagem de Dados` - Tabelas e relacionamentos
-- Relacionamento entre as tabelas no Power BI, seguindo o modelo estrela (Star Schema) para otimizar a performance e a criação de medidas DAX.
-
-<div align="center">
-  <img src="images/diagrama_relacional_tabelas.png" alt="Descrição da imagem">
-</div>
-
 ---
 
-## 🔍 Dashboard e Principais Insights da Análise
+## Principais Insights da Análise
 
-### Página 1 - Panorama de Vendas
-![Página 1](images/DASHBOARD-PANORAMA-VENDAS.png)
+### Panorama de Vendas
 
 ### 🏷️ Panorama Geral - Vendas e Receita
 Contexto geral sobre o desempenho de vendas, servindo de base para as análises nas demais páginas.
@@ -34,8 +32,7 @@ Contexto geral sobre o desempenho de vendas, servindo de base para as análises 
 - **SP, RJ, MG** concentram **65% da receita total** (R$ 10,1 Mi)
 ---
 
-### Página 2 - Cliente 
-![Página 2](images/DASHBOARD-CLIENTES.png)
+### Cliente 
 
 ### 🏷️ Insights - Priorização de Clientes
 
@@ -62,8 +59,7 @@ Contexto geral sobre o desempenho de vendas, servindo de base para as análises 
 
 ---
 
-### Página 3 - Entregas e Estados
-![Página 3](images/DASHBOARD-ENTREGAS.png)
+### Entregas
 
 ### 🏷️ Insights - Satisfação por Estado e Eficiência nas Entregas
 - A partir do scatter plot de volume de vendas por estado e média de review score podemos fazer um diagnóstico estratégico por estado e classificar eles em 4 grupos, permitindo priorizar ações com base em dados.
@@ -84,8 +80,7 @@ Contexto geral sobre o desempenho de vendas, servindo de base para as análises 
 
 ---
 
-### Página 4 - Produtos e Categorias
-![Página 3](images/DASHBOARD-CATEGORIAS.png)
+### Ánalise de Categorias
 
 ### 🏷️ Insights - Relação de Volume de Categorias e Contribuição para a Receita
 - Ao analisar o scatter plot com **Volume de Itens Vendidos X Receita por Categoria** e a tabela com ticket médio podemos classificar as categorias em grupos estratégicos e direcionar ações de negócio:
@@ -98,6 +93,12 @@ Contexto geral sobre o desempenho de vendas, servindo de base para as análises 
   - `Volume Baixo | Receita Baixa`: Categorias a serem reavaliadas. Estudar reposicionamento ou descontinuamento.<br>
 
 ---
+## Modelagem de Dados - Tabelas e relacionamentos
+Relacionamento entre as tabelas no Power BI, seguindo o modelo estrela (Star Schema) para otimizar a performance e a criação de medidas DAX.
+
+<div align="center">
+  <img src="images/diagrama_relacional_tabelas.png" alt="Descrição da imagem" width = 600>
+</div>
 
 ## 🛠️ Tecnologias e Ferramentas Utilizadas
 **Google Colab (Python)**
